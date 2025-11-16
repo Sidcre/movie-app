@@ -1,0 +1,46 @@
+body
+{
+    background-color: rgba(0, 0, 0, 0.855);
+    color:white;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.movie-app > .row{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.image-container
+{
+    position: relative;
+    transition: transform 0.2s;
+}
+.image-container:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.image-container:hover .overlay
+{
+    opacity: 1;
+}
+.overlay
+{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin:0px;
+    font-size: 20px;
+    padding:10px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
